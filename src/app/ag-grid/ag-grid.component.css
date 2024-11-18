@@ -1,0 +1,43 @@
+label,
+input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  width: 195px;
+}
+
+/* 給 select 與 input 相同的樣式 */
+select {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  width: 200px;
+  padding: 3px;
+  text-align: center;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 2px; */
+  /* background-color: #fff; */
+  /* transition: border-color 0.2s ease; */
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: auto 10fr; /* 第一列自動寬度，第二列填滿剩餘空間 */
+  align-items: center; /* 垂直對齊 */
+  gap: 8px; /* 控制列間距 */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; /* 控制每組之間的距離 */
+}
+
+.center-container {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+}

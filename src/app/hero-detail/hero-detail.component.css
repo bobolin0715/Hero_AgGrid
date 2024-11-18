@@ -1,0 +1,58 @@
+label,
+input {
+  /* display: inline-block; */
+  vertical-align: middle;
+  margin-right: 8px;
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  width: 400px;
+}
+
+.button {
+  padding: 8px 80px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #b1b1b1; /* 藍色背景 */
+  border: none;
+  border-radius: 4px; /* 圓角 */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* 平滑過渡效果 */
+  margin-left: 1em;
+}
+
+.button:hover {
+  background-color: #206ab9; /* 懸停時加深背景顏色 */
+}
+
+.button:active {
+  background-color: #004494; /* 點擊時的背景顏色 */
+}
+
+/* 整體樣式 */
+.styled-list {
+  list-style: none; /* 去掉默認的項目符號 */
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 單個 li 的樣式 */
+.styled-list li {
+  padding: 12px 20px; /* 增加內邊距 */
+  margin-bottom: 10px; /* 每個項目間隔 */
+  background-color: #f9f9f9; /* 背景顏色 */
+  border-radius: 8px; /* 圓角 */
+  border: 1px solid #ddd; /* 邊框 */
+  font-size: 1.1rem;
+  color: #333; /* 文字顏色 */
+  transition: all 0.3s ease; /* 動畫過渡效果 */
+}
+
+/* 添加項目符號，並自定義樣式 */
+.styled-list li::before {
+  content: "#"; /* 使用勾選符號 */
+  color: #4caf50; /* 勾選符號顏色 */
+  font-size: 1.2rem;
+  margin-right: 10px; /* 與文字的間距 */
+}

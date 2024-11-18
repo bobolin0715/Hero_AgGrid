@@ -1,0 +1,68 @@
+label,
+input {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  width: 195px;
+}
+
+/* 給 select 與 input 相同的樣式 */
+select {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+  width: 200px;
+  padding: 3px;
+  text-align: center;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 2px; */
+  /* background-color: #fff; */
+  /* transition: border-color 0.2s ease; */
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: auto 10fr; /* 第一列自動寬度，第二列填滿剩餘空間 */
+  align-items: center; /* 垂直對齊 */
+  gap: 8px; /* 控制列間距 */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; /* 控制每組之間的距離 */
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 100px;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4a90e2, #007aff); /* 藍色漸層 */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.button:hover {
+  transform: scale(1.05); /* 懸停時放大 */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #007aff, #4a90e2); /* 顏色反轉的漸層 */
+}
+
+.button:active {
+  transform: scale(0.98); /* 點擊時縮小 */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.center-container {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+}

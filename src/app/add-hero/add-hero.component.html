@@ -1,0 +1,47 @@
+<div>
+  <div class="form-group">
+    <label for="new-hero">Hero Name</label>
+    <input id="new-hero" type="text" #heroName required />
+  </div>
+  <div class="form-group">
+    <label for="new-hero">Hero Level</label>
+    <select id="defaultOptionSelect" #heroLevel>
+      <option value=0>0</option>
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5</option>
+      <option value=6>6</option>
+      <option value=7>7</option>
+      <option value=8>8</option>
+      <option value=9>9</option>
+      <option value=10>10</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="new-hero">Hero birthday</label>
+    <input
+      type="date"
+      placeholder="YYYY-MM-DD"
+      value="2000-01-01"
+      #heroBirthday
+      required
+    />
+  </div>
+
+  <div class="center-container">
+    <button
+      class="button"
+      type="add-button"
+      (click)="
+        add(heroName.value, heroLevel.value, heroBirthday.value);
+        heroName.value = '';
+        heroLevel.value = '0';
+        heroBirthday.value = '2000-01-01'
+      "
+    >
+      Add hero
+    </button>
+  </div>
+</div>

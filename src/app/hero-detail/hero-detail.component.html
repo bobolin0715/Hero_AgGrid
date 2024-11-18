@@ -1,0 +1,17 @@
+<div *ngIf="hero">
+  <h2>Details</h2>
+  <div>
+    <ul class="styled-list">
+      <li>ID: {{ hero.id }}</li>
+      <li><input id="hero-name" [(ngModel)]="hero.name" placeholder="name" /></li>
+      <li>Level: {{ hero.level }}</li>
+      <li>Birthday: {{ hero.birthday }}</li>
+    </ul>
+    
+  </div>
+
+  <div>
+    <button class="button" type="button" (click)="goBack()">go back</button>
+    <button class="button" type="button" (click)="save()">save</button>
+  </div>
+</div>
