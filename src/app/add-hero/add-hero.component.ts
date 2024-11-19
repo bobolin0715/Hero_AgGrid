@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { HeroService } from '../hero.service';
 import { Hero } from '../hero';
 import { AgGridComponent } from '../ag-grid/ag-grid.component';

@@ -17,8 +17,8 @@ export class AgGridComponent implements OnInit {
   rowData: Hero[] = [];
 
   pagination = true;
-  paginationPageSize = 10;
-  paginationPageSizeSelector = [10, 20, 50, 100];
+  paginationPageSize = 20;
+  paginationPageSizeSelector = [20, 50, 100, 200];
 
   defaultColDef: ColDef = {
     flex: 1,
